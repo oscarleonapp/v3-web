@@ -16,11 +16,11 @@
   --titulo: #07c373;
   --bg-navbar: linear-gradient(to bottom right, #272632, #292935);
   --bg-navbar-2: rgba(255, 255, 255, 0.05);
-  --bx-shadow: 0 8px 32px 8px rgba(0, 0, 0, 0.3);
+  --bx-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 body {
-  background: linear-gradient(#9eabba, #c6ced7) no-repeat;
+  /* background: linear-gradient(#9eabba, #c6ced7) no-repeat; */
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }

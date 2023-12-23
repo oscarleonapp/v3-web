@@ -1,17 +1,13 @@
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  /* border-bottom-left-radius: 25px; */
-  /* border-bottom-right-radius: 25px; */
   overflow: hidden;
-  background: linear-gradient(to bottom right, #272632, #4b4c61);
-  box-shadow: 0 8px 32px 8px rgba(0, 0, 0, 0.3);
   position: fixed;
   bottom: 0;
 }
 
 .screen {
-  height: 75px;
+  height: 30px;
   width: 100%;
 }
 
@@ -21,7 +17,7 @@
 }
 
 .nav {
-  background: rgba(255, 255, 255, 0.05);
+  background-color: #272632;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -44,10 +40,10 @@
 }
 .nav-item .hump svg,
 .nav-item .hump path {
-  fill: rgba(255, 255, 255, 0.05);
+  fill: #272632;
 }
 .nav-item .title {
-  color: #bbb;
+  color: #ffffff;
   position: absolute;
   left: 0;
   right: 0;
