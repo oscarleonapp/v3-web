@@ -1,0 +1,85 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  /* border-bottom-left-radius: 25px; */
+  /* border-bottom-right-radius: 25px; */
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #272632, #4b4c61);
+  box-shadow: 0 8px 32px 8px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+}
+
+.screen {
+  height: 75px;
+  width: 100%;
+}
+
+*[class^="icon-"] {
+  height: 24px;
+  width: 24px;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav-item {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  height: 3.5rem;
+}
+.nav-item .hump {
+  top: -24px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 500ms ease-out;
+}
+.nav-item .hump svg,
+.nav-item .hump path {
+  fill: rgba(255, 255, 255, 0.05);
+}
+.nav-item .title {
+  color: #bbb;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -150%;
+  font-size: 12px;
+  text-align: center;
+  transition: bottom 500ms ease-out;
+}
+.nav-item *[class^="icon-"] {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: top 500ms ease-out;
+}
+.nav-item *[class^="icon-"] svg,
+.nav-item *[class^="icon-"] path {
+  fill: #aaa;
+}
+
+.nav-item.active .hump {
+  transform: scaleY(1);
+}
+.nav-item.active .title {
+  bottom: 16px;
+}
+.nav-item.active *[class^="icon-"] {
+  position: absolute;
+  top: -8px;
+}
+.nav-item.active *[class^="icon-"] svg,
+.nav-item.active *[class^="icon-"] path {
+  fill: #fff;
+}
